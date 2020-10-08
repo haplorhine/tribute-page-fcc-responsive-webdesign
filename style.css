@@ -1,0 +1,152 @@
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+}
+
+h1, h2, .more-info {
+  font-family: 'Abril Fatface', cursive;
+  font-weight: normal;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  /* border-radius: .5em; */
+  background: #A6D2FF;
+  padding: 1em .5em 1em;
+  --bg-margin-top-bottom: 1em;
+  margin: var(--bg-margin-top-bottom) 1em;
+  min-height: calc(100vh - var(--bg-margin-top-bottom)*2);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 600px) {
+  #main {
+    --bg-margin-top-bottom: 1.5em;
+     margin: var(--bg-margin-top-bottom) 3em;
+     max-width: 800px;
+     box-shadow: .5em .5em black;
+     padding: 1em 3em 1em;
+  }
+}
+
+#title {
+  text-align: center;
+  margin: 0;
+  font-size: 3em;
+}
+
+#subtitle {
+  text-align: center;
+  margin: .5em 0 2.5rem;
+  font-size: 1.3em;
+}
+
+#img-div {
+  display: flex;
+  justify-content: center;
+  background: #CFE7FF;
+  transition: .2s;
+}
+
+@media (min-width: 600px) {
+  #img-div:hover {
+    transform: rotate(-1.5deg);
+    box-shadow: .5em .5em black;
+  }
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  display: block; /* because of test suite error */
+}
+
+
+
+.img-figure {
+  margin: 1em 1em .5em;
+}
+
+figcaption {
+    text-align: center;
+    margin: .5em 0 0;
+    font-weight: 400;
+}
+
+
+
+@media screen and (min-width: 600px) {
+  .img-figure {
+  margin: 2em 2em 1em;
+  }
+  figcaption {
+    text-align: center;
+    margin: 1em 0 0;
+  }
+}
+
+#tribute-info {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: .5em 1.5em;
+}
+
+#tribute-info h2 {
+  text-align: center;
+}
+
+#tribute-info ul {
+  margin-bottom: 1em;
+}
+
+#tribute-info li {
+  padding: .3em 0;
+  line-height: 1.5;
+}
+
+.li-year {
+  font-weight: 600;
+}
+
+#tribute-link:hover, #tribute-link:focus {
+  margin: -0.2em .2em .2em -0.2em;
+  box-shadow: .2em .2em black;
+}
+
+#tribute-link, #tribute-link:active {
+  margin: 0;
+  box-shadow: none;
+  border: 1px solid black;
+  background: #FFC354;
+  padding: .75em;
+  color: black;
+  text-decoration: none;
+  transition: .1s;
+  text-align: center;
+}
+
+#tribute-link:active {
+  transition: .05s;
+}
+
+.quelle {
+  margin-top: 2rem;
+  font-size: .7em;
+  text-align: center;
+  line-height: 2;
+}
